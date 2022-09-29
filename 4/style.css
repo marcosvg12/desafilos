@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+:root {
+    --fonte1: Playfair Display, serif;
+    --fonte2: Passions Conflict, cursive;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: blanchedalmond;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte1);
+    font-size: 4vw;
+    padding-top: 20px;
+    font-variant: small-caps;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover, footer a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+header > p {
+    padding-bottom: 20px ; 
+}
+
+section {
+    font-family: var(--fonte2);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2.8vw;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    padding-left: 20px;
+    line-height: 1.6em;
+}
+section p {
+    padding-bottom: 1.2em;
+}
+
+section.normal {    
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(23, 22, 22, 0);
+    color: white;
+    box-shadow: inset 6px 6px 12px 0px black ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    width: 70%;
+    background-color: rgba(50, 40, 40, 0.354);
+    text-shadow: 1px 2px 0px black;
+}
+
+#img1 {
+    background-image: url('/imagens/background001.jpg');
+    background-position: right center;
+}
+
+#img2 {
+    background-image: url('/imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
